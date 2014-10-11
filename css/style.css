@@ -15,7 +15,7 @@ body {
   text-align: center;
   background-color: #ECEB6F;
   box-shadow: 0 10px 15px 10px rgba(0,0,0,0.5);  
-  
+  max-height: auto;
 }
 
 
@@ -61,6 +61,7 @@ button:active {
   font-family: 'Shadows Into Light',cursive;
   padding: 10px;
   height: 800px;
+  text-decoration: none;
 
  
 }
@@ -80,7 +81,7 @@ button:active {
   border-top: 1px solid blue;
   padding: 10px;
   cursor: row-resize;
-
+  
 }
 
 .list_orig li:last-child {
@@ -107,6 +108,7 @@ button:active {
 	margin-left: 210px;
 	cursor: pointer;
 	padding: 5px;
+	
 }
 
 .check:hover {
@@ -132,3 +134,6 @@ button:active {
 	padding: 8px;
 }
 
+.line-through {
+	text-decoration: line-through;
+}
