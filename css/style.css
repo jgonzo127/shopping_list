@@ -1,0 +1,124 @@
+body {
+  margin: 0 auto;
+  padding: 0;
+  background-image: url("../img/cork-texture.jpg"); 
+  background-size:cover;
+  background-repeat: no-repeat;
+  
+}
+
+.content {
+  width:700px;
+  margin-right: auto;
+  margin-left:auto;
+  box-sizing:border-box;
+  text-align: center;
+  background-color: #ECEB6F;
+  box-shadow: 0 10px 15px 10px rgba(0,0,0,0.5);  
+  
+}
+
+
+.add_bar {
+  border-radius: 30px;
+  border: 3px solid black;
+  width: 500px;
+  text-align: center;
+  height: 25px;
+  cursor:text;
+  font-family: "Shadows Into Light", cursive;
+  font-size: 30px;
+  padding: 10px;
+  
+}
+
+.submit_button, .reset_button {
+  border: 3px solid black;
+  border-radius: 20px;
+  background-color: #ECEB6F;
+  cursor: pointer;
+  height: 40px;
+  width: 120px;
+  font-family: 'Permanent Marker', cursive;
+  font-size: 20px;
+  
+}
+
+button:active {
+	
+}
+
+
+.list_title {
+  font-family: "Permanent Marker", cursive;
+  padding-top: 10px;
+  font-size: 38px;
+  line-height: 2;
+ }
+
+.list_orig {
+  font-size: 28px;
+  font-family: 'Shadows Into Light',cursive;
+  padding: 10px;
+  height: 800px;
+
+ 
+}
+.list_orig:before {
+  content:'';
+  border-left: 1px solid red;
+  border-right: 1px solid red;
+  width: 2px;
+  position: absolute;
+  height:800px;
+  margin-left: -340px;
+}
+
+
+.list_orig li {
+  list-style: none;
+  border-top: 1px solid blue;
+  padding: 10px;
+
+}
+
+.list_orig li:last-child {
+  border-bottom: 1px solid blue;
+}
+  
+ .list_orig li:hover {
+  background-color: rgba(204, 204, 204, 0.3);
+  -webkit-transition: all 0.2s;
+  -moz-transition:    all 0.2s;
+  -ms-transition:     all 0.2s;
+  -o-transition:      all 0.2s;
+}
+
+.check {
+	background-image: url('../img/blue-check-mark.png');
+	float: left;
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 25px;
+	width: 20px;
+	margin-top: 2px;
+	position: absolute;
+	margin-left: 210px;
+	cursor: pointer;
+	padding: 5px;
+}
+
+.ex {
+	background-image: url("../img/red-x.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 25px;
+	width: 25px;
+	position: absolute;
+	margin-top: -35px;
+	margin-right: 750px;
+	cursor: pointer;
+	right: 0;
+	
+}
+

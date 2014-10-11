@@ -1,0 +1,14 @@
+<link href='http://fonts.googleapis.com/css?family=Permanent+Marker|Shadows+Into+Light' rel='stylesheet' type='text/css'>
+<body>
+   <div class="content"> 
+     <div class="sidelines"> </div>
+     <h1 class='list_title'>Shopping List</h1>    
+    <form>
+     <input class="add_bar" type="text" name="NewItem" placeholder="Add Items Here"><br>
+    <br>
+    <input class="submit_button" type="submit" value="Submit">
+    </form>
+     <ol class='list_orig'>
+    <li>Bananas</li>
+    <li>Eggs</li>
+    <li>Milk</li>
