@@ -7,19 +7,22 @@
     <link rel="stylesheet" href="css/style.css">
     <script src="https://code.jquery.com/jquery.min.js"></script>
     <script src="js/app.js"></script>
+  
 </head>
     <body>
        <div class="content"> 
-         <div class="sidelines"> </div>
+         <div class="sidelines"></div>
          <h1 class='list_title'>Shopping List</h1> 
-         <form>
+      
+         <form id='sub' onsubmit="clearForm(this);"
+>
              <input class="add_bar" type="text" name="NewItem" placeholder="Add Items Here"><br><br>
-            <button id="submit" class="submit_button" name="submit" type="submit" action="index.html" value="Submit" disabled>Submit</button>
+            <button id="submit" class="submit_button" name="submit" type="button" value="Submit" disabled>Submit</button>
             <button id="reset" name="reset" class="reset_button" type="submit" value="Reset">Reset</button>
         </form>
          
 
-         <ol class='list_orig' id='sortable'>
+         <ol class='list_orig' id='list'>
             <li class='item'><div class="check"></div><span>Bananas</span><div class="ex"></div></li>
             <li class='item'><div class="check"></div><span>Eggs</span><div class="ex"></div></li>
             <li class='item'><div class="check"></div><span>Milk</span><div class="ex"></div></li>

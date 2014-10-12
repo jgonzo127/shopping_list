@@ -15,9 +15,23 @@ body {
   text-align: center;
   background-color: #ECEB6F;
   box-shadow: 0 10px 15px 10px rgba(0,0,0,0.5);  
-  max-height: auto;
+  height: 900px;
+  background-image: linear-gradient(hsla(210, 50%, 30%, .5) 1px, transparent 1px);
+  background-size: 100% 1.75em;
+ 
+
 }
 
+.sidelines {
+  content:'';
+  border-left: 1px solid red;
+  border-right: 1px solid red;
+  width: 2px;
+  position:absolute;
+  height: 900px;
+  margin-left: 40px;
+
+}
 
 .add_bar {
   border-radius: 30px;
@@ -41,11 +55,13 @@ body {
   width: 120px;
   font-family: 'Permanent Marker', cursive;
   font-size: 20px;
+
   
 }
 
-button:active {
-	
+.submit_button:focus, .reset_button:focus, .add_bar:focus {
+	outline: 0;
+	box-shadow: none;
 }
 
 
@@ -56,38 +72,25 @@ button:active {
   line-height: 2;
  }
 
-.list_orig {
+#list {
   font-size: 28px;
   font-family: 'Shadows Into Light',cursive;
   padding: 10px;
-  height: 800px;
+  height: auto;
   text-decoration: none;
 
  
-}
-.list_orig:before {
-  content:'';
-  border-left: 1px solid red;
-  border-right: 1px solid red;
-  width: 2px;
-  position: absolute;
-  height:800px;
-  margin-left: -280px;
 }
 
 
 .list_orig li {
   list-style: none;
-  border-top: 1px solid blue;
   padding: 10px;
   cursor: row-resize;
   
 }
 
-.list_orig li:last-child {
-  border-bottom: 1px solid blue;
-}
-  
+
  .list_orig li:hover {
   background-color: rgba(204, 204, 204, 0.3);
   -webkit-transition: all 0.2s;
@@ -105,7 +108,7 @@ button:active {
 	width: 20px;
 	margin-top: 2px;
 	position: absolute;
-	margin-left: 210px;
+	margin-left: 180px;
 	cursor: pointer;
 	padding: 5px;
 	
@@ -136,4 +139,8 @@ button:active {
 
 .line-through {
 	text-decoration: line-through;
+}
+
+.deleted {
+  display: none;
 }

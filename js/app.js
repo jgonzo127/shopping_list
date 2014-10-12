@@ -1,38 +1,40 @@
 $(document).ready(function() {
-		var ex =$('.ex').on('click', function(){
-		$(this).parent('li').hide();
-	})
-		var check =$(".check").on( 'click', function () {
+//delete items	
+		$(".ex").on('click', function(){
+		$(this).parent('li').remove();
+	});
+//cross off items
+		$(".check").on('click', function () {
     	$(this).parent('li').toggleClass('line-through');
 
     });
-
-	$('form > .submit_button').on('click', function(e){
-		
+//submit new items
+	$('.submit_button').click(function(e){
 		e.preventDefault();
 		var add = $('.add_bar').val();
-		$('.ex').on('click', function(){
-		$(this).parent('li').hide();
+//delete new items			
+		$(".ex").on('click', function(){
+		$(this).parent('li').remove();
 		})
-		$(".check").on( 'click', function () {
+
+//cross off new items
+		$(".check").on('click', function () {
     	$(this).parent('li').toggleClass('line-through');
-    });
-		
-		$('.list_orig').append('<li class="item">' + 
-			'<div class="check"></div>' + 
-			'<span>' + add + '</span>' + 
-			'<div class="ex"></div>' + '</li>'
-			);
-		
+   		})
+//put new items into DOM and on list
+		$('#list').append('<li class="item"><div class="check"></div><span>'
+		 + add + '</span><div class="ex"></div></li>');
+		});
 
-	})
-
-	$('form input').bind('keyup', function() {
+//disables submit button until text is input
+	$('form').bind('keyup', function() {
 		var nameLength = $('form input').length;
 		if (nameLength > 0) {
 			$('.submit_button').removeAttr('disabled');
 		}
 	});
+
+	
 
 	
 });
