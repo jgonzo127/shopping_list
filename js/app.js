@@ -4,7 +4,6 @@ $(document).ready(function() {
 		var nameLength = $('form input').length;
 		if (nameLength > 0) {
 			$('.submit_button').removeAttr('disabled');
-
 		}
 	});
 //delete items	
@@ -29,19 +28,15 @@ $(document).ready(function() {
 //delete new items   
 		$(".ex").on('click', function(){
 		$(this).parent('li').remove();
-		})		
-
+		})	
+//cleat input text on submit			
+		$('#sub').children('input').val('');
 	});
 	
-
-
-
-
 //makes list sortable
 	 $(function() {
-$( "#list" ).sortable();
-
-})
+		$( "#list" ).sortable();
+	})
 
 	
 });
