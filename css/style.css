@@ -78,7 +78,7 @@ body {
   padding: 10px;
   height: auto;
   text-decoration: none;
-
+  position: relative;
  
 }
 
@@ -126,7 +126,7 @@ body {
 	width: 25px;
 	position: absolute;
 	margin-top: -35px;
-	margin-right: 750px;
+	margin-right: 120px;
 	cursor: pointer;
 	right: 0;
 	clear: both;
@@ -139,6 +139,7 @@ body {
 
 .line-through {
 	text-decoration: line-through;
+  color: red;
 }
 
 
