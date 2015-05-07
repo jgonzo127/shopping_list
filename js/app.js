@@ -10,16 +10,31 @@ $(document).ready(function() {
 	});
 
 //disables submit button until text is input
-	$('form').bind('keyup', function() {
-		var nameLength = $('form input').length;
+		$('form').bind('keyup', function() {
+		var nameLength = $('.add_bar').length;
 		if (nameLength > 0) {
 			$('.submit_button').removeAttr('disabled');
 		}
+		
 	});
+
+//disables submit button after first submit
+	function disable() {	
+		var nameLength = $('.add_bar').val().length;
+		if (nameLength < 1) {
+			$('.submit_button').attr('disabled', "true");
+		} else {
+			$('.submit_button').attr('disabled', "false");
+		}
+	};	
+
+
 	
 //submit new items
 	$('.submit_button').on('click', function(e){
+		$('this').attr('disabled');
 		e.preventDefault();
+		disable();
 		var add = $('.add_bar').val();
 		
 //put new items into DOM and on list
@@ -31,6 +46,7 @@ $(document).ready(function() {
 		});	
 //clear input text on submit			
 	$('#sub').children('input').val('');
+	
 	})
 //cross off new items
 	$('#list').on('click', '.check', function () {
